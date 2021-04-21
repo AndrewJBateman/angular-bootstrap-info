@@ -1,6 +1,6 @@
 # :zap: Angular Bootstrap Info
  
-* Angular app to show info in a Boostrap card array
+* Angular app to show [mediastack Global News Data API](https://mediastack.com) data in a Boostrap card array
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -20,7 +20,9 @@
 
 ## :books: General info
 
-* tba.
+* Free news from the [mediastack REST API](https://mediastack.com) supplied in JSON format
+* Rxjs take(1) and map() methods used to extract API data.
+* Angular Async subscribe pipe used directly with the news response observable in the html template as it is auto-unsubscribing, instead of an observable subscription. 
 
 ## :camera: Screenshots
 
@@ -30,12 +32,6 @@
 
 * [Angular v11](https://angular.io/)
 * [Ngx-pagination](https://www.npmjs.com/package/ngx-pagination)
-* [Angular PWA](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
-* [Iconfinder](https://www.iconfinder.com/) for free svg ivons
-* [Free Vector Graphics Software](https://vectr.com/)
-* [cthedot.de](https://cthedot.de/icongen/) icon generation - Web and App icons and PNG favicons
-* [Custom Splash Screen on iOS](https://appsco.pe/developer/splash-screens)
-* [http-server](https://www.npmjs.com/package/http-server) command-line http server
 
 ## :floppy_disk: Setup
 
@@ -47,7 +43,7 @@
 
 ## :computer: Code Examples
 
-* `manifest.webmanifest` PWA config.file caches resources/assets using a set caching strategy
+* tba
 
 ```typescript
 
@@ -60,13 +56,16 @@
 ## :clipboard: Status & To-Do List
 
 * Status: In work
-* To-Do: Complete
+* To-Do: Complete pagination. News detail page. check why articles are repeated?
 
 ## :clap: Inspiration
 
-* [PWAs (Progressive Web Apps) in Angular - Make them look like Native Mobile Apps! - Roman Just Codes]](https://www.youtube.com/watch?v=WgdUGwTE1XU&t=127s)
-* [A Guide to Building a PWA in Angular 8](https://levelup.gitconnected.com/a-guide-to-building-a-pwa-in-angular-acea27ae708d)
+* [mediastack REST API](https://mediastack.com/documentation) 
+
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com

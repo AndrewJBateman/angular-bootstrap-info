@@ -6,21 +6,17 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { InfoService } from './services/info.service';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
-  providers: [
-    InfoService
-  ],
-  bootstrap: [AppComponent]
+  providers: [InfoService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,9 +1,9 @@
 export interface ApiResponse {
   pagination: Pagination;
-  data: Data[];
+  data: ApiData[];
 }
 
-export interface Data {
+export interface ApiData {
   author?: string;
   category: string;
   country: string;
