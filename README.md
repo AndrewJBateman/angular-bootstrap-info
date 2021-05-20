@@ -1,8 +1,12 @@
 # :zap: Angular Bootstrap Info
  
 * Angular app to show [mediastack Global News Data API](https://mediastack.com) data in a Boostrap card array
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-bootstrap-info?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-bootstrap-info?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-bootstrap-info?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-bootstrap-info?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -30,7 +34,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/)
+* [Angular v12](https://angular.io/)
 * [Ngx-pagination](https://www.npmjs.com/package/ngx-pagination)
 
 ## :floppy_disk: Setup
