@@ -1,6 +1,6 @@
 # :zap: Angular Bootstrap Info
  
-* Angular app to show [mediastack Global News Data API](https://mediastack.com) data in a Boostrap card array
+* Angular app to show [mediastack Global News Data API](https://mediastack.com) data in a Bootstrap card array
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-bootstrap-info?style=plastic)
@@ -35,6 +35,7 @@
 ## :signal_strength: Technologies
 
 * [Angular v12](https://angular.io/)
+* [Reactive Extensions Library for Javascript rxjs v7](https://rxjs-dev.firebaseapp.com/)
 * [Ngx-pagination](https://www.npmjs.com/package/ngx-pagination)
 
 ## :floppy_disk: Setup
@@ -55,12 +56,12 @@
 
 ## :cool: Features
 
-* tba
+* Array of responsive bootstrap cards
 
 ## :clipboard: Status & To-Do List
 
-* Status: In work
-* To-Do: Complete pagination. News detail page. check why articles are repeated?
+* Status: Working
+* To-Do: Change API? Add pagination??. Add click to data detail page.
 
 ## :clap: Inspiration
 
