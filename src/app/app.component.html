@@ -1,54 +1,45 @@
 <head>
   <meta name="description" content="Shows New York Times News API data" />
-  <!-- <link rel="preload" href="https://api.nytimes.com" as "fetch">
+  <!-- <link rel="preload" href="http://api.mediastack.com/v1/news?" as "fetch">
   <link rel="preload" href="https://static01.nyt.com" as "fetch"> -->
 </head>
 
 <div class="container">
-  <div class="main-div">
-    <h2
-      class="mt-2 text-center"
-      style="
-        color: #455a64;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-          'Lucida Sans', Arial, sans-serif;
-      "
-    >
-      <strong>Mediastack API News</strong>
-    </h2>
+  <h2
+    class="mt-2 text-center"
+    style="
+      color: #455a64;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    "
+  >
+    <strong>Mediastack Nouvelles</strong>
+  </h2>
 
-    <!--news cards-->
-    <div class="row">
-      <div
-        class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"
-        *ngFor="
-          let info of infoObject$
-            | async
-            | paginate: { itemsPerPage: 50, currentPage: p };
-          trackBy: trackByFn
-        "
-      >
-        <div class="card full-height">
-          <img
-            class="card-img-top"
-            src="{{ info.image != null ? info.image : 'assets/newspaper.svg' }}"
-            alt="image for news article"
-          />
-          <div class="card-body p-2">
-            <h6 class="card-title">
-              {{ info.title }}
-            </h6>
-            <p class="card-text mb-0" *ngIf="info.source">
-              {{ info.source }}
-            </p>
-          </div>
-        </div>
+  <div *ngFor="let info of infoObject$ | async; trackBy: trackByFn">
+    <div class="card mb-2">
+      <div class="card-header text-dark fw-bold">
+        {{ info.title }}
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {{ info.description }}...
+          <a [href]="info.url" target="_blank" class="card-link"
+            >link to article</a
+          >
+        </p>
+        <p class="card-text">
+          <span class="badge rounded-pill bg-primary me-2">{{
+            info.source
+          }}</span
+          ><span class="badge rounded-pill bg-secondary me-2">{{
+            info.published_at | date
+          }}</span>
+          <span class="badge rounded-pill bg-success"
+            >Country: {{ info.country }}</span
+          >
+        </p>
       </div>
     </div>
   </div>
-  <br />
-  <div class="text-center">
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
-  </div>
-  <br />
 </div>
