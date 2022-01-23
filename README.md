@@ -25,18 +25,17 @@
 ## :books: General info
 
 * Free news from the [mediastack REST API](https://mediastack.com) supplied in JSON format
-* Rxjs take(1) and map() methods used to extract API data.
+* Rxjs take(1), tap() and map() methods used to extract API data.
 * Angular Async subscribe pipe used directly with the news response observable in the html template as it is auto-unsubscribing, instead of an observable subscription. 
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/home.jpg)
+![Example screenshot](./imgs/news.png)
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
+* [Angular v13](https://angular.io/)
 * [Reactive Extensions Library for Javascript rxjs v7](https://rxjs-dev.firebaseapp.com/)
-* [Ngx-pagination](https://www.npmjs.com/package/ngx-pagination)
 
 ## :floppy_disk: Setup
 
@@ -44,7 +43,6 @@
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * Run `ng update` to update Angular
-* Run `npm run lint` to lint app - produces no output at the moment
 
 ## :computer: Code Examples
 
@@ -56,12 +54,12 @@
 
 ## :cool: Features
 
-* Array of responsive bootstrap cards
+* Use of Angular async pipe reduces amount of code and auto-unsubscribes from the news data observable
 
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: Change API? Add pagination??. Add click to data detail page.
+* To-Do: Add images? Change API? Add pagination??. Add click to data detail page.
 
 ## :clap: Inspiration
 
