@@ -10,12 +10,12 @@ import { environment } from '../../environments/environment';
   providedIn: 'root',
 })
 export class InfoService {
-  private apiResponseData: Observable<ApiData[]>;
+  private apiResponseData: Observable<ApiResponse>;
 
   constructor(public http: HttpClient) {}
 
   // offset set to 0, limit set to 100
-  public getInfo(offset: string, limit: string): Observable<any> {
+  public getInfo(offset: string, limit: string): Observable<any>{
     const apiKey = environment.API_KEY;
     const baseUrl = `http://api.mediastack.com/v1/news?access_key=${apiKey}`;
     const languageOption = 'fr';
@@ -23,7 +23,7 @@ export class InfoService {
     const sortOption = 'published_desc';
     const apiUrl = `${baseUrl}&language=${languageOption}&countries=${countryOption}&sort=${sortOption}&${offset}&${limit}`;
 
-    this.apiResponseData = this.http.get<ApiResponse>(apiUrl).pipe(
+    return this.http.get<ApiResponse>(apiUrl).pipe(
       take(1),
       tap(res => console.log(res)),
       map(res => res['data']),
@@ -31,6 +31,5 @@ export class InfoService {
         throw 'an error occured: ' + err;
       }),
     );
-    return this.apiResponseData;
   }
 }
