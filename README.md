@@ -40,21 +40,30 @@
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
+* Get an API key using [Mediastack Quickstart](https://mediastack.com/quickstart)
+* Add API_KEY to `environment.ts` files
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * Run `ng update` to update Angular
 
 ## :computer: Code Examples
 
-* tba
+* `info.service.ts` http request returns an observable data stream that I tapped using console.log
 
 ```typescript
-
+    return this.http.get<ApiResponse>(apiUrl).pipe(
+      take(1),
+      tap(res => console.log(res)),
+      map(res => res['data']),
+      catchError(err => {
+        throw 'an error occured: ' + err;
+      }),
+    );
 ```
 
 ## :cool: Features
 
-* Use of Angular async pipe reduces amount of code and auto-unsubscribes from the news data observable
+* Use of Angular async pipe in HTML template reduces amount of code and auto-unsubscribes from the news data observable
 
 ## :clipboard: Status & To-Do List
 
