@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, map, take } from 'rxjs/operators';
+import { catchError, map, take, tap } from 'rxjs/operators';
 
 import { ApiResponse, ApiData } from '../models/info.model';
 import { Observable } from 'rxjs';
@@ -19,15 +19,17 @@ export class InfoService {
     const apiKey = environment.API_KEY;
     const baseUrl = `http://api.mediastack.com/v1/news?access_key=${apiKey}`;
     const languageOption = 'fr';
+    const countryOption = 'fr';
     const sortOption = 'published_desc';
-    const apiUrl = `${baseUrl}&language=${languageOption}&sort=${sortOption}&${offset}&${limit}`;
+    const apiUrl = `${baseUrl}&language=${languageOption}&countries=${countryOption}&sort=${sortOption}&${offset}&${limit}`;
 
     this.apiResponseData = this.http.get<ApiResponse>(apiUrl).pipe(
       take(1),
-      map((res) => res.data),
-      catchError((err) => {
+      tap(res => console.log(res)),
+      map(res => res['data']),
+      catchError(err => {
         throw 'an error occured: ' + err;
-      })
+      }),
     );
     return this.apiResponseData;
   }
