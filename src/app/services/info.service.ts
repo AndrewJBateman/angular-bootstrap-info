@@ -15,7 +15,7 @@ export class InfoService {
   constructor(public http: HttpClient) {}
 
   // offset set to 0, limit set to 100
-  public getInfo(offset: string, limit: string): Observable<any>{
+  public getInfo(offset: string, limit: string): Observable<any> {
     const apiKey = environment.API_KEY;
     const baseUrl = `http://api.mediastack.com/v1/news?access_key=${apiKey}`;
     const languageOption = 'fr';
