@@ -35,8 +35,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [Reactive Extensions Library for Javascript rxjs v7](https://rxjs-dev.firebaseapp.com/)
+* [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ## :floppy_disk: Setup
 
