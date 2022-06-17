@@ -1,5 +1,5 @@
 # :zap: Angular Bootstrap Info
- 
+
 * Angular app to show [mediastack Global News Data API](https://mediastack.com) data in a Bootstrap card array
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
@@ -10,7 +10,7 @@
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Angular Material Table](#zap-angular-material-table)
+* [:zap: Angular Bootstrap Info](#zap-angular-bootstrap-info)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
@@ -20,13 +20,14 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * Free news from the [mediastack REST API](https://mediastack.com) supplied in JSON format
-* Rxjs take(1), tap() and map() methods used to extract API data.
-* Angular Async subscribe pipe used directly with the news response observable in the html template as it is auto-unsubscribing, instead of an observable subscription. 
+* take(1), tap() and map() methods used to extract API data.
+* Angular Async subscribe pipe used directly with the news response observable in the html template as it is auto-unsubscribing, instead of an observable subscription.
 
 ## :camera: Screenshots
 
@@ -72,7 +73,7 @@
 
 ## :clap: Inspiration
 
-* [mediastack REST API](https://mediastack.com/documentation) 
+* [mediastack REST API](https://mediastack.com/documentation)
 
 ## :file_folder: License
 
