@@ -36,7 +36,7 @@
 ## :signal_strength: Technologies
 
 * [Angular v14](https://angular.io/)
-* [Reactive Extensions Library for Javascript rxjs v7](https://rxjs-dev.firebaseapp.com/)
+* [Reactive Extensions Library for Javascript RXJS v7](https://rxjs-dev.firebaseapp.com/)
 * [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ## :floppy_disk: Setup
@@ -50,7 +50,7 @@
 
 ## :computer: Code Examples
 
-* `info.service.ts` http request returns an observable data stream that I tapped using console.log
+* `info.service.ts` HTTP request returns an observable data stream that I tapped using console.log
 
 ```typescript
     return this.http.get<ApiResponse>(apiUrl).pipe(
