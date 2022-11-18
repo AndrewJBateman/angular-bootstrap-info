@@ -35,7 +35,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Reactive Extensions Library for Javascript RXJS v7](https://rxjs-dev.firebaseapp.com/)
 * [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
@@ -55,7 +55,6 @@
 ```typescript
     return this.http.get<ApiResponse>(apiUrl).pipe(
       take(1),
-      tap(res => console.log(res)),
       map(res => res['data']),
       catchError(err => {
         throw 'an error occured: ' + err;
@@ -70,7 +69,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: Add images? Change API? Add pagination??. Add click to data detail page.
+* To-Do: Add transloco, images? Change API? Add pagination??. Add click to data detail page.
 
 ## :clap: Inspiration
 
