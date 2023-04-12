@@ -11,16 +11,16 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular Bootstrap Info](#zap-angular-bootstrap-info)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clipboard: Status \& To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
-  * [:file_folder: License](#file_folder-license)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -35,16 +35,17 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/)
+* [Angular v16](https://angular.io/)
 * [Reactive Extensions Library for Javascript RXJS v7](https://rxjs-dev.firebaseapp.com/)
 * [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Live Server](https://www.npmjs.com/package/live-server)
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * Get an API key using [Mediastack Quickstart](https://mediastack.com/quickstart)
 * Add API_KEY to `environment.ts` files
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. Note: This will not work with Mediastack due to restrictions using http. See this [Stackoverflow for ways around HTTP restriction](https://stackoverflow.com/questions/75218904/aviationstack-api-error-https-encryption-not-supported). I created a build file then opened index.html using [Live Server](https://www.npmjs.com/package/live-server).
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * Run `ng update` to update Angular
 
@@ -74,6 +75,7 @@
 ## :clap: Inspiration
 
 * [mediastack REST API](https://mediastack.com/documentation)
+* [Stackoverflow for ways around HTTP restriction](https://stackoverflow.com/questions/75218904/aviationstack-api-error-https-encryption-not-supported)
 
 ## :file_folder: License
 
